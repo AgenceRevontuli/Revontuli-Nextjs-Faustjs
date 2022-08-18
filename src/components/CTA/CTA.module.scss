@@ -1,0 +1,54 @@
+@import "scss/variables";
+
+.cta__brut {
+    margin: 80px 0px;
+    cursor: pointer;
+    a {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        color: $color-mid-gray;
+        font-size: 16px;
+        text-align: right;
+        transition: all .3s;
+        & > :hover {
+            cursor: pointer;
+        }
+    }
+    a:hover {
+        color: $color-primary;
+    }
+}
+
+.cta__ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 30px; 
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.08);
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    .cta__brut {
+        width: 50%;
+        margin: 80px auto;
+        transform: translateX(-50%);
+        cursor: pointer;
+        a {
+            gap: 5px;
+        }
+    }
+    .cta__ico {
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (min-width: $content-width-extended){
+    .cta__brut {
+        width: 35%;
+    }
+}

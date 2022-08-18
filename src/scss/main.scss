@@ -1,0 +1,121 @@
+// CSS for use on every page. Added with normalize.css in pages/_app.tsx.
+
+@import "variables";
+@import "typography";
+
+body {
+	color: $color-black;
+	font-size: 16px;
+  height: 100vh;
+	line-height: 1.8;
+	color: $color-secondary;
+	position: relative;
+	background-image: url('http://headless.local/wp-content/uploads/2022/08/Rectangle.svg');
+	background-color: #FFFAF8;
+}
+
+.bg {
+	background-image: url('http://headless.local/wp-content/uploads/2022/08/bg.72b7a4b8.svg');
+	background-size: var(254px) auto;
+	background-position: calc(50% - var(254px)/2) -1px;
+}
+
+main {
+	padding: 0 $padding-standard;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrap {
+	margin: 0 auto;
+	max-width: $content-width;
+	overflow: auto;
+}
+
+footer {
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: $content-width) {
+	.wrap {
+		padding: 0;
+	}
+
+	main {
+		padding: 0 $padding-content;
+	}
+
+	.content-page .wrap,
+	.content-single .wrap,
+	.content-index .wrap {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/* Locomotive */ 
+/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+    overflow: hidden; }
+  
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  .has-scroll-smooth body {
+    overflow: hidden; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%; }
+  
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0; }
+    .c-scrollbar:hover {
+      transform: scaleX(1.45); }
+    .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+      opacity: 1; }
+    [data-scroll-direction="horizontal"] .c-scrollbar {
+      width: 100%;
+      height: 10px;
+      top: auto;
+      bottom: 0;
+      transform: scaleY(1); }
+      [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+        transform: scaleY(1.3); }
+  
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    .has-scroll-dragging .c-scrollbar_thumb {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
+    [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+      right: auto;
+      bottom: 0; }

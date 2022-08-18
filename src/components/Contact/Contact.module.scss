@@ -1,0 +1,29 @@
+@import "scss/variables";
+
+.section__contact {
+    margin: 150px 0;
+    min-height: 100px!important;
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        color: $color-mid-gray;
+    }
+    p span {
+        font-size: 2.8em;
+        color: $color-primary;
+    }
+}
+
+.item__column {
+    border-top: 1px solid rgba(0,0,0,0.09);
+    border-bottom: 1px solid rgba(0,0,0,0.09);
+    margin: 80px 0;
+    padding: 80px 0;
+}
+
+@media screen and (min-width: $content-width) {
+    .item__column {
+        padding: 15vh 20%;
+    }
+}

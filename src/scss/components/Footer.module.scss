@@ -1,0 +1,46 @@
+// CSS for the Footer component in components/Footer.tsx.
+
+@import "scss/variables";
+
+.footer {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 14px;
+}
+
+.footer__columns {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 $padding-standard;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .column_block {
+        width: 100%;
+        p {
+            text-align: left;
+        }
+    }
+    h4 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        li {
+            margin-bottom: 0px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .footer__columns {
+        margin: 100px auto;
+        .column_block {
+            width: 33%;
+        }
+    }
+}

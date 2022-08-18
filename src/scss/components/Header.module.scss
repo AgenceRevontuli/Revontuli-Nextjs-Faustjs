@@ -1,0 +1,37 @@
+// CSS for the Header component in components/Header.tsx.
+
+@import "scss/variables";
+
+.header {
+  .logo {
+    padding-left: $padding-standard;
+  }
+}
+
+.inner__header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  padding: 30px 0px;
+  transition: all 0.4s ease-in-out;
+}
+.bg {
+  background: rgba(255, 255, 255, 0.42);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  padding: 5px 0px;
+}
+
+
+// Ecrans à plus de 1200px
+@media screen and (min-width: $content-width) {
+  .header {
+    .logo {
+      padding-left: $padding-content;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import 'scss/variables';
+
+// Header de la page réalisation
+.realisation__img {
+    height: 85vh;
+    text-align: center;
+    img {
+        width: 400px;
+        border-radius: 20px;
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+.realisation__title {
+    text-align: center;
+}
+
+.realisation__short {
+    color: $color-mid-gray;
+    margin-bottom: 20px;
+}
+// Affichage de la date
+.realisation__date {
+    display: none;
+    text-align: left;
+    padding: 0px 20px;
+    border-left: 4px solid $color-primary;
+    font-size: 1rem;
+    span {
+        font-size: 1.7rem;
+        display: block;
+        color: $color-secondary;
+        line-height: 1.3rem;
+        margin-bottom: 20px;
+    }
+    p {
+        color: $color-mid-gray;
+        margin: 0;
+        line-height: 0.8rem;
+    }
+}
+
+// Gestion des services 
+.section__content {
+    h2 {
+        border-left: 3px solid $color-primary;
+        padding-left: 20px;
+        margin: 40px 0 60px 0;
+        line-height: 2rem;
+    }
+}
+
+.content_long {
+    margin-top: 100px;
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+        border-radius: 20px;
+        margin: 60px auto;
+
+    }
+}
+
+.tags__items {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.item__tag {
+    h3 {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        background-color: rgba(33, 42, 61, 0.08);
+        display: inline-block;
+        border-radius: 5px;
+        color: $color-secondary;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: $content-width) {
+    .realisation__header {
+        padding-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .realisation__img {
+        position: relative;
+        height: inherit;
+        width: 450px;
+        margin: 0 auto;
+        img {
+            max-height: 700px;
+        }
+    }
+    .realisation__title {
+        position: absolute;
+        top: 20%;
+        left: -55%;
+        width: 550px;
+        text-align: left;
+    }
+    
+    .realisation__short {
+        position: absolute;
+        bottom: 10%;
+        right: -80%;
+        max-width: 300px;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    
+    .realisation__date {
+        display: block;
+        text-align: left;
+        padding: 0px 20px;
+        border-left: 4px solid $color-primary;
+        position: absolute;
+        bottom: 35%;
+        left: -55%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: $content-width-extended) {
+    .section__content {
+        padding: 80px 20%;
+    }
+}

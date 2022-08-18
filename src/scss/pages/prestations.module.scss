@@ -1,0 +1,20 @@
+@import 'scss/variables';
+
+.presta__header {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: $content-width){
+    .presta__header {
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            min-width: 60%;
+            font-size: 7rem;
+        }
+    }
+}
