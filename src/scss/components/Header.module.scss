@@ -5,6 +5,10 @@
 .header {
   .logo {
     padding-left: $padding-standard;
+    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
