@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <body>
-          <div data-scroll-container className="bg">
+          <div data-scroll-container className="bg" id="top">
             <Main />
             <NextScript />
           </div>

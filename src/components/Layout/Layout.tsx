@@ -40,7 +40,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <div ref={containerRef} id="main-container" data-scroll-container>
+      <div ref={containerRef} id="main-container top" data-scroll-container >
         <Header backgroundNav={scrollY} />
         {children}
         <Footer />
